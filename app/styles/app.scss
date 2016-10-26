@@ -1,3 +1,4 @@
+$white: #f2f4f7;
 
 #garrettPic, #blakePic {
   width: 80%;
@@ -20,11 +21,11 @@ body {
 .jumbotron {
   margin-bottom: 0px;
   background-color: #282C34;
-  border-bottom: 4px solid black;
+  border-bottom: 2px solid black;
   h1{
     text-align: center;
     font-size: 84px;
-    color: white;
+    color: $white;
     font-family: Menlo;
   }
 }
@@ -41,12 +42,17 @@ body {
     font-size: 25px;
     margin-left: 20px;
     margin-right: 20px;
+    color: $white;
   }
 }
 
 .navbar-inverse {
   margin-bottom: 40px;
   border-bottom: 4px solid black;
+}
+
+.navbar-inverse .navbar-nav li a {
+  color: $white;
 }
 .aboutTitle{
   text-align: center;
@@ -113,7 +119,7 @@ body {
   margin-bottom: 50px;
   h1 {
     text-align: center;
-    color: white;
+    color: $white;
     font-size: 38px;
     text-shadow: 0 0 10px black;
   }

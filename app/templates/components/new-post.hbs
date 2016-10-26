@@ -1,27 +1,28 @@
 {{#if addNewPost}}
-  <form>
+  <form class="well newForm adminPosts">
+    <h1>New Post</h1>
     <div class="form-group">
       <label for="author">Author</label>
-      {{input value=author id="author"}}
+      {{input value=author id="author" class="form-control"}}
     </div>
     <div class="form-group">
       <label for="title">Title</label>
-      {{input value=title id="title"}}
+      {{input value=title id="title" class="form-control"}}
     </div>
     <div class="form-group">
       <label for="date">Date</label>
-      {{input value=date id="date"}}
+      {{input value=date id="date" class="form-control"}}
     </div>
     <div class="form-group">
       <label for="image">Image URL</label>
-      {{input value=image id="image"}}
+      {{input value=image id="image" class="form-control"}}
     </div>
     <div class="form-group">
       <label for="body">Body Content</label>
-      {{textarea value=body id="body"}}
+      {{textarea value=body id="body" class="form-control"}}
     </div>
     <button class="btn btn-default" {{action 'savePost'}}>Save Post</button>
   </form>
 {{else}}
-  <button class="btn btn-default" {{action 'postFormShow'}}>Add New Post</button>
+  <button class="btn btn-default" id="newPostButton" {{action 'postFormShow'}}>Add New Post</button>
 {{/if}}

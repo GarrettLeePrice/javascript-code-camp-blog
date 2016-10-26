@@ -3,23 +3,23 @@
   <form>
     <div class="form-group">
       <label for="author">Author</label>
-      {{input value=author id="author" placeholder=post.author}}
+      {{input value=author id="author" placeholder=post.author class="form-control"}}
     </div>
     <div class="form-group">
       <label for="title">Title</label>
-      {{input value=title id="title" placeholder=post.title}}
+      {{input value=title id="title" placeholder=post.title class="form-control"}}
     </div>
     <div class="form-group">
       <label for="date">Date</label>
-      {{input value=date id="date" placeholder=post.date}}
+      {{input value=date id="date" placeholder=post.date class="form-control"}}
     </div>
     <div class="form-group">
       <label for="image">Image URL</label>
-      {{input value=image id="image" placeholder=post.image}}
+      {{input value=image id="image" placeholder=post.image class="form-control"}}
     </div>
     <div class="form-group">
       <label for="body">Body Content</label>
-      {{textarea value=body id="body" placeholder=post.body}}
+      {{textarea value=body id="body" placeholder=post.body class="form-control"}}
     </div>
     <button class="btn btn-default" {{action 'updatePost' post}}>Update Post</button>
   </form>

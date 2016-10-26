@@ -1,0 +1,66 @@
+#garrettPic, #blakePic {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+
+.about {
+  height: 400px;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  h1{
+    text-align: center;
+  }
+}
+
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+  li {
+    float: none;
+    display: inline-block;
+  }
+}
+
+.aboutTitle{
+  text-align: center;
+  font-size: 42px;
+}
+
+#aboutTheBlog {
+  p{
+    text-align: center;
+  }
+}
+
+.names{
+  text-align: center;
+  font-size: 34px;
+}
+
+.adminPosts{
+  text-align: center;
+  padding-top: 0px;
+  border: 2px solid black;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.newForm {
+  text-align: center;
+}
+
+#newPostButton {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 60%;
+  margin: 0 auto;
+}

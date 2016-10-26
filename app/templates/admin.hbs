@@ -1,9 +1,12 @@
+<h1 class="aboutTitle">Administrator</h1>
+{{new-post post=post savePost="savePost"}}
+
 {{#each model as |post|}}
-<h1>{{post.title}}</h1>
-<button {{action 'delete' post}}>Delete Post</button>
-{{edit-post post=post updatePost="updatePost"}}
+  <div class="well adminPosts">
+    <h1>{{post.title}}</h1>
+      <button class="btn btn-default"{{action 'delete' post}}>Delete Post</button>
+      <br><br>
+      {{edit-post post=post updatePost="updatePost"}}
+  </div>
 {{/each}}
 <hr>
-
-
-{{new-post post=post savePost="savePost"}}

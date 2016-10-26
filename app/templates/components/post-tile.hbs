@@ -1,6 +1,8 @@
-<div class="well">
+<div class="well" id="postDisplay">
   <h1>{{post.title}}</h1>
-  <h4>Posted on {{post.date}} by {{post.author}}</h4>
-  <img src="{{post.image}}">
-  <p>{{post.body}}</p>
+  <img id="displayImage" src="{{post.image}}">
+  <div class="well" id="bodyWell">
+    <h4>Posted on {{post.date}} by {{post.author}}</h4>
+    <p>{{post.body}}</p>
+  </div>
 </div>

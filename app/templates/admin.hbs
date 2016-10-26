@@ -1,5 +1,8 @@
 {{#each model as |post|}}
 <h1>{{post.title}}</h1>
+<button {{action 'delete' post}}>Delete Post</button>
 {{/each}}
+<hr>
+
 
 {{new-post post=post savePost="savePost"}}

@@ -10,6 +10,12 @@ export default Ember.Route.extend({
       var newPost = this.store.createRecord('post', params);
       newPost.save();
       this.transitionTo('admin');
+    },
+    delete(post) {
+      if (confirm('Are you sure you want to delete this post?')) {
+        post.destroyRecord();
+        this.transitionTo('admin');
+      }
     }
   }
 });

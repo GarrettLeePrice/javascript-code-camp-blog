@@ -1,0 +1,12 @@
+{{#if showCommentForm }}
+  <div class="comments">
+    <h1>Comments</h1>
+    {{#each post.comments as |comment|}}
+      <h3>{{comment.author}}</h3>
+      <p>{{comment.content}}</p>
+      <button class="btn btn-default" {{action 'deleteComment' comment}}>Delete</button>
+    {{/each}}
+  </div>
+{{else}}
+  <button class="btn btn-default" {{action 'showComments' comment}}>Show Comments</button>
+{{/if}}

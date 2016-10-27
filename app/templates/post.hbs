@@ -11,9 +11,10 @@
 
 {{log model}}
 
-<ul>
+<div class="comments">
+  <h1>Comments</h1>
   {{#each model.comments as |comment|}}
     <h3>{{comment.author}}</h3>
     <p>{{comment.content}}</p>
   {{/each}}
-</ul>
+</div>

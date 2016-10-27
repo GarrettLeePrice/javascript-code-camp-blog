@@ -6,3 +6,14 @@
     <p>{{model.body}}</p>
   </div>
 </div>
+
+{{new-comment addComment="addComment" post=model}}
+
+{{log model}}
+
+<ul>
+  {{#each model.comments as |comment|}}
+    <h3>{{comment.author}}</h3>
+    <p>{{comment.content}}</p>
+  {{/each}}
+</ul>

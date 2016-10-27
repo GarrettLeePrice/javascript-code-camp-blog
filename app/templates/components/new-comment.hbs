@@ -1,0 +1,12 @@
+<form class="well newForm">
+  <h1>Add a Comment</h1>
+  <div class="form-group">
+    <label for="author">Name</label>
+    {{input value=author id="author" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="content">Comment</label>
+    {{textarea value=content id="content" class="form-control"}}
+  </div>
+  <button class="btn btn-default" {{action 'addComment'}}>Add Comment</button>
+</form>

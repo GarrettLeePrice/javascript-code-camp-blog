@@ -5,9 +5,9 @@
 {{#each model as |post|}}
   <div class="well adminPosts">
     <h1 class="whitestyle">{{post.title}}</h1>
-      <button class="btn btn-default"{{action 'delete' post}}>Delete Post</button>
-      <br>
-      {{edit-post post=post updatePost="updatePost"}}
-      {{comment-list post=post}}
+    <button class="btn btn-default" id="adminButton1" {{action 'delete' post}}>Delete Post</button>
+    <br>
+    {{edit-post post=post updatePost="updatePost"}}
+    {{comment-list post=post}}
   </div>
 {{/each}}

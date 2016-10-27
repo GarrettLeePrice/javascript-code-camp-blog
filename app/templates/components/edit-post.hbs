@@ -1,6 +1,6 @@
 {{#if editPost}}
-  <h1>Edit Post</h1>
-  <form>
+  <form id="editForm">
+    <h1>Edit Post</h1>
     <div class="form-group">
       <label for="author">Author</label>
       {{input value=author id="author" placeholder=post.author class="form-control"}}
@@ -21,8 +21,8 @@
       <label for="body">Body Content</label>
       {{textarea value=body id="body" placeholder=post.body class="form-control"}}
     </div>
-    <button class="btn btn-default" {{action 'updatePost' post}}>Update Post</button>
+    <button class="btn btn-default" {{action 'updatePost' post}}>Done</button>
   </form>
 {{else}}
-  <button class="btn btn-default" {{action 'editFormShow'}}>Edit Post</button>
+  <button class="btn btn-default" id="adminButton2" {{action 'editFormShow'}}>Edit Post</button>
 {{/if}}

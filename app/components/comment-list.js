@@ -3,8 +3,12 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   showCommentForm: false,
   actions: {
-    showComments(comment) {
+    showComments() {
       this.set('showCommentForm', true);
+    },
+
+    hideComments() {
+      this.set('showCommentForm', false);
     },
 
     deleteComment(comment) {

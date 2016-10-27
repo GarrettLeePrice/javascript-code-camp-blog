@@ -1,7 +1,7 @@
 <div class="well" id="postDisplay">
   {{#link-to 'post' post.id}}<h1><{{model.title}}</h1>{{/link-to}}
   <img id="displayImage" src="{{model.image}}">
-  <div class="well" id="bodyWell">
+  <div class="well bodyWell">
     <h4>Posted on {{model.date}} by {{model.author}}</h4>
     <p>{{model.body}}</p>
   </div>
@@ -11,10 +11,11 @@
 
 {{log model}}
 
-<div class="comments">
+<div id="postComments">
   <h1>Comments</h1>
-  {{#each model.comments as |comment|}}
-    <h3>{{comment.author}}</h3>
-    <p>{{comment.content}}</p>
-  {{/each}}
+  <div id="postComment">
+    {{#each model.comments as |comment|}}
+      <p><span id="commenter">{{comment.author}}</span> - {{comment.content}}</p>
+    {{/each}}
+  </div>
 </div>

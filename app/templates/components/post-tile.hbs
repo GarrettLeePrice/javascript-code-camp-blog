@@ -1,7 +1,7 @@
 <div class="well" id="postDisplay">
   {{#link-to 'post' post.id}}<h1>{{post.title}}</h1>{{/link-to}}
   <img id="displayImage" src="{{post.image}}">
-  <div class="well" id="bodyWell">
+  <div class="well bodyWell">
     <h4>Posted on {{post.date}} by {{post.author}}</h4>
     <p>{{post.body}}</p>
   </div>

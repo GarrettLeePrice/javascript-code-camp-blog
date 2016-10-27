@@ -1,4 +1,6 @@
 $white: #f2f4f7;
+$black: #282C34;
+$red: #B33A3E;
 
 #garrettPic, #blakePic {
   width: 80%;
@@ -62,6 +64,8 @@ body {
 #aboutTheBlog {
   p{
     text-align: center;
+    color: $black;
+    font-weight: bold;
   }
 }
 
@@ -120,7 +124,7 @@ body {
   }
 }
 
-#bodyWell {
+.bodyWell {
   background-color: #C7C7C7;
   border: none;
   margin-top: 10px;
@@ -161,7 +165,7 @@ body {
 }
 
 .redstyle {
-  color: #B33A3E;
+  color: $red;
 }
 
 .whitestyle {
@@ -175,5 +179,71 @@ body {
 
 .comments {
   background-color: $white;
-  padding: 20px;
+  padding: 10px 0px 10px 0px;
+  margin: 10px 0px 10px 0px;
+  border-radius: 20px;
+}
+
+#commentContent{
+  color: black;
+}
+
+.commentList {
+  text-align: left;
+}
+
+#deleteComment {
+  background-image: url("http://www.endlessicons.com/wp-content/uploads/2012/12/trash-icon-614x460.png");
+  background-size: 250%;
+  margin-left: 10px;
+  height: 25px;
+  width: 25px;
+  border: none;
+  background-position: center;
+  background-color: inherit;
+}
+
+#editForm {
+  background-color: $white;
+  border-radius: 20px;
+  border: 2px solid black;
+  h1{
+    color: black;
+  }
+  button {
+    margin-bottom: 20px;
+  }
+}
+
+.aboutPara {
+  padding: 30px;
+  margin-top: 50px;
+  color: $black !important;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+#postComments{
+  background-color: $black;
+  padding: 40px;
+  border-radius: 30px;
+  h1 {
+    text-align: center;
+    font-family: menlo;
+    color: $white;
+  }
+}
+
+#postComment {
+  background-color: $white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  margin: 0 auto;
+  p{
+    font-size: 20px;
+  }
+  #commenter {
+    font-weight: bold;
+  }
 }

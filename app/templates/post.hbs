@@ -1,6 +1,6 @@
 <div class="well" id="postDisplay">
-  {{#link-to 'post' post.id}}<h1>{{post.title}}</h1>{{/link-to}}
-  <img id="displayImage" src="{{post.image}}">
+  {{#link-to 'post' post.id}}<h1><{{model.title}}</h1>{{/link-to}}
+  <img id="displayImage" src="{{model.image}}">
   <div class="well" id="bodyWell">
     <h4>Posted on {{model.date}} by {{model.author}}</h4>
     <p>{{model.body}}</p>

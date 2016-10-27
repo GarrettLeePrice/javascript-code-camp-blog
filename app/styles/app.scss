@@ -2,6 +2,12 @@ $white: #f2f4f7;
 $black: #282C34;
 $red: #B33A3E;
 
+
+a:hover {
+  color: $red;
+
+}
+
 #garrettPic, #blakePic {
   width: 80%;
   height: 80%;
@@ -51,10 +57,11 @@ body {
 .navbar-inverse {
   margin-bottom: 40px;
   border-bottom: 4px solid black;
+  border-top: 10px solid #C7C7C7;
 }
 
 .navbar-inverse .navbar-nav li a {
-  color: $white;
+  color: $red;
 }
 .aboutTitle{
   text-align: center;
